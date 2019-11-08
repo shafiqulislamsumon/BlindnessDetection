@@ -21,6 +21,9 @@
     2 - Moderate <br/>
     3 - Severe <br/>
     4 - Proliferative DR <br/>
-<br/>
-![](images/imagecategory.png)
+
+ ![](images/imagecategory.png)
+ 
+ - Sample retina images
+ ![](images/sampleimage.png)
 
