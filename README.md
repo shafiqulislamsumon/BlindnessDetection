@@ -27,3 +27,44 @@
  - Sample retina images
  ![](images/sampleimage.png)
 
+
+- VGG16 Model
+
+```sh
+model = Sequential()
+model.add(Conv2D(64, (3, 3), activation='relu', input_shape=(image_height, image_width, channel), padding='same'))
+model.add(Conv2D(64, (3, 3), activation='relu', padding='same'))
+model.add(MaxPooling2D(pool_size=(2, 2)))
+model.add(Dropout(0.25))
+
+model.add(Conv2D(128, (3, 3), activation='relu', padding='same'))
+model.add(Conv2D(128, (3, 3), activation='relu', padding='same'))
+model.add(MaxPooling2D(pool_size=(2, 2)))
+model.add(Dropout(0.25))
+
+model.add(Conv2D(256, (3, 3), activation='relu', padding='same'))
+model.add(Conv2D(256, (3, 3), activation='relu', padding='same'))
+model.add(Conv2D(256, (3, 3), activation='relu', padding='same'))
+model.add(MaxPooling2D(pool_size=(2, 2)))
+model.add(Dropout(0.25))
+
+model.add(Conv2D(512, (3, 3), activation='relu', padding='same'))
+model.add(Conv2D(512, (3, 3), activation='relu', padding='same'))
+model.add(Conv2D(512, (3, 3), activation='relu', padding='same'))
+model.add(MaxPooling2D(pool_size=(2, 2)))
+model.add(Dropout(0.25))
+
+model.add(Conv2D(512, (3, 3), activation='relu', padding='same'))
+model.add(Conv2D(512, (3, 3), activation='relu', padding='same'))
+model.add(Conv2D(512, (3, 3), activation='relu', padding='same'))
+model.add(MaxPooling2D(pool_size=(2, 2)))
+model.add(Dropout(0.25))
+
+model.add(Flatten())
+model.add(Dense(4096, activation='relu'))
+model.add(Dense(4096, activation='relu'))
+model.add(Dropout(0.5))
+model.add(Dense(num_classes, activation='softmax'))
+
+model.summary()
+```
