@@ -15,11 +15,12 @@
 
 # Description
 - **VGG16** model is used for image classification
-- 5 categories of retina images
-    0 - No DR
-    1 - Mild
-    2 - Moderate
-    3 - Severe
-    4 - Proliferative DR
-
+- 5 categories of retina images <br/>
+    0 - No DR <br/>
+    1 - Mild <br/>
+    2 - Moderate <br/>
+    3 - Severe <br/>
+    4 - Proliferative DR <br/>
+<br/>
+![](images/imagecategory.png)
 
